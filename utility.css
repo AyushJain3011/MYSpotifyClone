@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    /* font-weight: 700; */
+    font-style: normal;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    color: white;
+    background-color: black;
+}
+.flex{
+    display: flex;
+    gap: 5px;
+}
+.gap-1{
+    gap: 7px;
+}
+.justify-item{
+    justify-content: center;
+}
+.item-center{
+    align-items: center;
+}
+.grid{
+    display: grid;
+}
+/* .red-border{
+    border: 2px solid red;
+} */
+.invert-img{
+    filter: invert(1);
+}
+.bg-black{
+    background-color: black;
+}
+.bg-grey{
+    background-color:#121212;
+}
+.m-1{
+    margin: 5px;
+}
+.p-1{
+    padding: 10px;
+}
+.round{
+    border-radius: 12px;
+}
+.svg-size{
+    width: 19px;
+}
+a{
+    text-decoration: none;
+}
+.svg-size2{
+  width: 25px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #333; /* Darker background */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Grey handle */
+    border-radius: 9px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker grey handle */
+  }
+
+  /* .sliding-text {
+    position: absolute;
+    white-space: nowrap;
+    animation: slideRight 5s linear infinite;
+  }
+
+  @keyframes slideRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  } */
+  /* .details {
+    width: 111px;
+    max-height: 24px;
+    overflow: hidden;
+    position: relative;
+    /* border: 1px solid black; Just for visualization
+  } */
+/*
+  .sliding-text {
+    white-space: nowrap;
+    position: absolute;
+    animation: slideRight 5s linear infinite;
+  }
+
+  @keyframes slideRight {
+    0% {
+        /* left: 0; 
+      transform: translateX(0%); 
+    }*/
+    /* 100% {
+     right: 100%;  
+      transform: translateX(-100%);
+    }
+  }
+   */
+

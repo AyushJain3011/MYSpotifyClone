@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volume Control</title>
+  <style>
+    .volume-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .volume-slider {
+      position: absolute;
+      bottom: 0px;
+      width: 100px;
+      display: none;
+      z-index: 1;
+    }
+
+    .volume-container:hover .volume-slider {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="volume-container">
+  <img src="./site-content/volume-up.svg" alt="Volume Icon" width="30" height="30">
+  <input type="range" min="0" max="100" value="50" class="volume-slider">
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var volumeSlider = document.querySelector(".volume-slider");
+    var volumeIcon = document.querySelector(".volume-container img");
+
+    volumeSlider.addEventListener("input", function () {
+      var volumeValue = this.value;
+      // Here you can implement the logic to change the volume
+      console.log("Volume set to: " + volumeValue);
+    });
+
+    volumeSlider.addEventListener("change", function () {
+      var volumeValue = this.value;
+      // Here you can implement the logic to change the volume permanently
+      console.log("Final volume set to: " + volumeValue);
+    });
+
+    volumeIcon.addEventListener("mouseover", function () {
+      volumeSlider.style.display = "block";
+    });
+
+    volumeIcon.addEventListener("mouseout", function () {
+      volumeSlider.style.display = "none";
+    });
+  });
+</script>
+
+</body>
+</html>

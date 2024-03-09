@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sliding Text</title>
+<style>
+  .container {
+    width: 300px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    overflow: hidden;
+    position: relative;
+    border: 1px solid black; /* Just for visualization */
+  }
+
+  .sliding-text {
+    white-space: nowrap;
+    position: absolute;
+    animation: slideRight 5s linear infinite;
+  }
+
+  @keyframes slideRight {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="sliding-text">Your sliding text goes here</div>
+  </div>
+</body>
+</html>
+

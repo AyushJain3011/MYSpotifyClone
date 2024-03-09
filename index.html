@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container flex">
+        <div class="left bg-black">
+            <section class="home bg-grey p-1 m-1 round">
+                <div class="close invert-img svg-size">
+                    <img src="./site-content/x-letter.svg" alt="">
+                </div>
+                <div class="logo"> <img id = "logo-img" class="invert-img" src="./logo.svg" alt="Logo"></div>
+                <ul class="nav">
+                    <li class="bg-grey">
+                        <img class="invert-img svg-size " src="./site-content/home.svg" alt="home"> Home
+                    </li>
+                    <li class="bg-grey">
+                        <img class="invert-img svg-size" src="./new_search.svg" alt="search"> Search
+                    </li>
+                </ul>
+            </section>
+            <section class="library bg-grey p-1 m-1 round">
+                <div class="library-title">
+                    <div class="first flex">
+                        <div class="library-data flex item-center gap-1">
+                            <img class="invert-img svg-size" src="./site-content/library.svg" alt="library">
+                            <span>Your Library</span>
+                        </div>
+                        <div class="flex item-center gap-1">
+                            <span><img class="invert-img svg-size"src="./site-content/add.svg" alt="add"></span>
+                            <span><img  class="invert-img svg-size"src="./site-content/arrow-right-1.svg" alt="right-arrow"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="second">
+                        <div class="create-play">
+                            <span class="bg-black round">Playlist</span>
+                        </div>
+                        <div class="my-playlist">
+                            <ul></ul>
+                        </div>
+                    </div>
+                </div>
+                    <div class="legal-links">
+                        <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                        <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp; Privacy Center</span></a></div>
+                        <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+                        <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+                        <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                        <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+                        <div><a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener">
+                            <span>Cookies</span>
+                          </a></div>
+            </section>
+        </div>
+        <div class="right"> 
+            <header class="p-1 round">
+                <div class="flex gap-1">
+                    <img class="svg-size2 invert-img menu" src="./site-content/hamburger.svg" alt="">
+                    <div class="nav" style="padding-top: 5px;">
+                        <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m15 6-5.29289 5.2929c-.33334.3333-.5.5-.5.7071s.16666.3738.5.7071l5.29289 5.2929" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>
+                        <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m9 18 5.2929-5.2929c.3333-.3333.5-.5.5-.7071s-.1667-.3738-.5-.7071l-5.2929-5.2929" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>
+                    </div>
+                </div>
+                <div class="nav-btn">
+                    <button class="signin-btn">Sign in</button>
+                    <button class="login-btn">Log in</button>
+                </div>
+            </header>
+            <div class="spotifyPlaylist bg-grey round">
+                <div class="heading bg-grey">
+                    <h1>Spotify Playlist</h1>
+                </div>
+                <div class="card-container bg-grey round">
+                </div> 
+                <div class="player">
+                    <div class="play-contorl">
+                        <div id="song-name">
+                        </div>
+                        <div id = "cotrols">
+                            <img class="svg-size2" id="prev" src="./site-content/skip-previous.svg" alt="prev">
+                            <img class="svg-size2" id="play" src="./site-content/play.svg" alt="play">
+                            <img class="svg-size2" id="next" src="./site-content/skip-next.svg" alt="next">
+                        </div>
+                        <div class="time-vol flex">
+                            <div class="volume-container">
+                                <img class="invert-img" src="./site-content/volume-up.svg" alt="Volume Icon">
+                                <input type="range" min="0" max="100" value="50" class="volume-slider">
+                            </div>
+                            <div id="song-duration"> </div>
+                        </div>
+                    </div>   
+                    <div class="song-info">
+                        <div class="song-bar">
+                            <div class="song-ctrl"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    
+</body>
+</html>
